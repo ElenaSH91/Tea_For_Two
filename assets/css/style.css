@@ -844,8 +844,8 @@ p {
     @media (max-width: 767px) {
       .slider_content p {
         font-size: 16px; } }
-/*  .slider_content .main-btn {
-    margin-top: 45px; }*/
+  .slider_content .main-btn {
+    margin-top: 45px; }
 
 .slider-active .slick-dots {
   position: absolute;
@@ -857,14 +857,15 @@ p {
   -o-transform: translateX(-50%);
   transform: translateX(-50%); }
   .slider-active .slick-dots li {
-    display: none;
+    display: inline-block;
     margin: 0 5px; }
     .slider-active .slick-dots li button {
-      display: none;
-      width: 15px;
-      height: 15px;
+      width: 13px;
+      height: 13px;
       background: none;
-      border: 2px solid #fff;
+      border: 0;
+      border-radius: 50%;
+      background-color: #101820;
       font-size: 0;
       -webkit-transition: all 0.3s ease-out 0s;
       -moz-transition: all 0.3s ease-out 0s;
@@ -877,9 +878,8 @@ p {
       -o-transform: translateX(-50%);
       transform: translateX(-50%); }
     .slider-active .slick-dots li.slick-active button {
-      display: none;
       background-color: #D19775;
-      border-color: #101820; }*/
+      border-color: #101820; }
 
 /*===========================
     03.SPECIALS css
@@ -1347,7 +1347,7 @@ p.form-message.success, p.form-message.error {
 
 .footer_about p {
   color: #fff;
-  margin-top: 25px; }
+  margin-top: 15px; }
 
 .footer_about .social {
   margin-top: 25px; }
